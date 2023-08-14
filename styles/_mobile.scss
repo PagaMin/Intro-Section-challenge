@@ -1,0 +1,123 @@
+@media only screen and (max-width: 1100px) {
+    .image-hero-desktop {
+        display: none;
+    }
+
+    .image-hero-mobile {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0.5rem;
+    }
+
+    .left {
+        margin-top: 2rem;
+    }
+
+    .title {
+        text-align: center;
+    }
+    .desc {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .learn-more-btn {
+        margin-left: 35%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 20px;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    #menu {
+        display: flex;
+        position: absolute;
+        width: 30%;
+        top: 70px;
+        right: 0;
+        background-color: white;
+        height: 0px;
+        z-index: 1000;
+        transition: 0.6s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #hamburguer {
+        border-top: 2px solid;
+        width: 20px;
+        margin-left: 10px;
+    }
+
+    #hamburguer::after,
+    #hamburguer::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: $almost-black;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .features:hover .desc-features,
+    .company:hover .desc-company {
+        margin-top: 10px;
+        margin-right: 1rem;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0);
+    }
+
+    #menu a {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+        margin-top: 1rem;
+        margin-right: 10px;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .features:hover .desc-features,
+    .company:hover .desc-company {
+        position: static;
+    }
+}

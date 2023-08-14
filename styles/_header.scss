@@ -1,0 +1,98 @@
+header {
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.links a:hover {
+    color: $almost-black;
+}
+
+.links a {
+    color: $medium-gray;
+    padding: 10px;
+}
+
+.link-feature,
+.link-company {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.desc-company,
+.desc-features {
+    display: none;
+}
+
+.features:hover .desc-features,
+.company:hover .desc-company {
+    position: absolute;
+    box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.75);
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    color: $almost-black;
+}
+
+.company:hover .desc-company {
+    display: block;
+}
+
+.features:hover .desc-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.align-icon-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.desc-company li {
+    margin: 10px 0;
+}
+
+.sign a {
+    color: $medium-gray;
+
+    &:hover {
+        color: $almost-black;
+    }
+}
+
+.button-register {
+    color: $medium-gray;
+    margin-left: 1rem;
+    cursor: pointer;
+    width: 6.5rem;
+    height: 2.625rem;
+    background-color: transparent;
+    border-radius: 14px;
+    border: 2px solid $medium-gray;
+
+    &:hover {
+        border: 2px solid $almost-black;
+        color: $almost-black;
+    }
+}
+
+#btn-mobile {
+    display: none;
+}

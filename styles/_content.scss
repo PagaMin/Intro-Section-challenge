@@ -1,0 +1,51 @@
+main {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.image-hero-desktop {
+    width: 30rem;
+    height: 40rem;
+}
+
+.image-hero-mobile {
+    display: none;
+}
+
+.left {
+    margin-top: 4rem;
+    width: 32.25rem;
+    height: 34.5rem;
+}
+
+.title {
+    font-size: 4rem;
+}
+
+.desc {
+    color: $medium-gray;
+    margin-top: 3rem;
+    width: 26.875rem;
+}
+
+.learn-more-btn {
+    font-weight: 700;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 3rem;
+    width: 10.188rem;
+    height: 3.5rem;
+    background-color: $almost-black;
+    color: $almost-white;
+}
+
+.list-clients {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
